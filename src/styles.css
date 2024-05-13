@@ -1,0 +1,97 @@
+.App {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  text-align: center;
+}
+
+body {
+  margin: 0;
+  overflow: hidden;
+}
+
+.grid-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.left {
+  padding: 10px;
+  text-align: left;
+  font-family: "Courier New", Courier;
+  font-size: small;
+}
+
+.right {
+  padding: 10px;
+  text-align: left;
+  font-family: "Courier New", Courier;
+}
+
+@media only screen and (min-width: 768px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns layout */
+    grid-gap: 0px;
+    overflow-y: hidden;
+    height: auto; /* Reset height */
+  }
+
+  .left {
+    grid-column: 1;
+    grid-row: 1; /* Align left box to the first row */
+  }
+
+  .right {
+    grid-column: 2;
+    grid-row: 1; /* Align right box to the first row */
+    overflow-y: scroll;
+    max-height: 100vh;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .grid-container {
+    overflow-y: scroll; /* Enable scrolling on mobile */
+  }
+}
+
+.glass-card {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+  margin: auto; /* Center the card horizontally */
+  max-width: calc(80%); /* Adjust the max-width to fit within the grid box */
+}
+
+.glass-card img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.glass-card h3 {
+  margin-top: 0;
+}
+
+.glass-card p {
+  margin-bottom: 0;
+}
+
+.mode-toggle {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.mode-toggle i {
+  font-size: 24px;
+  margin-left: 10px;
+}
+
+.dark-mode {
+  background-color: #333; /* Change background color for dark mode */
+  color: #fff; /* Change text color for dark mode */
+}
