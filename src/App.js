@@ -77,10 +77,11 @@ export default function App() {
           <br />
           <div class="glass-card">
             <img src="your-image-url.jpg" alt=""></img>
-            <h3>Project Title</h3>
+            <h3><a href="https://github.com/i-taylor/BIOLOGY102_FINAL" target="_blank">AI Tomato Disease Classifier</a></h3>
             <p>
-              Summary of the project goes here. It can be a brief description of
-              what the project is about.
+            An artificial intelligence (AI) tool to identify and diagnose diseases affecting tomato plants. By utilizing machine learning algorithms trained on vast datasets of images depicting healthy and diseased tomato plants, the classifier can accurately distinguish between different types of diseases, including blight, leaf mold, early blight, and more.
+
+
             </p>
           </div>
           <br />
