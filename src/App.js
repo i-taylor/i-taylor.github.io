@@ -54,22 +54,17 @@ export default function App() {
         </div>
         <div className="right">
           <h2>Experience</h2>
+          <br />
           <div className="summary">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad
-            <br />
-            <br />
-            minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            <br />
-            <br />
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
+          <h3>Learning Experience Design Fellow</h3>
+          <h4>May 2023 - May 2024</h4>
+          <p>During my fellowship, I contributed to the development and enhancement of the "Web Design for Everybody" course offered through the University of Michigan's online learning platform. This included organizing and aiding in the construction of the course on Coursera, managing database maintenance for course materials, PowerPoints, and readings, and ensuring content currency throughout iterations. Additionally, I conducted thorough testing of virtual reality experiences, providing guidance on error correction and fostering discussions for improvement. I also explored and beta-tested new data visualization tools for the Learning Experience Design (LXD) team, providing training and support to team members. Furthermore, I served as a UX designer for a UMICH faculty course, participating in the creation of mockups, wireframes, and HTML production. Additionally, I was responsible for creating and managing Canvas Courses for graduate classes at the University of Michigan.
+          </p>
           </div>
-          <br />
-          <br />
+         
+          <h3>Course Operations Fellow</h3>
+          <h4>May 2024 - Current</h4>
+          
           <h2>Projects</h2>
           <div class="glass-card">
             <img src="your-image-url.jpg" alt=""></img>
@@ -121,10 +116,28 @@ export default function App() {
           </div>
           <br />
           <br />
-
-          <div className="project"></div>
-        </div>
+          <div className="button-container">
+        <a
+          href="https://www.linkedin.com/in/isaac-tay/"
+          className="linkedin-button"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i className="fab fa-linkedin"></i>
+        </a>
+        <a
+          href="https://github.com/i-taylor"
+          className="github-button"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i className="fab fa-github"></i>
+        </a>
       </div>
+        </div>
+
     </div>
+  </div>
+    
   );
 }

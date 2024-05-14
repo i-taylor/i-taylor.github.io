@@ -1,18 +1,20 @@
+body {
+  margin: 0;
+  overflow: hidden;
+}
+
 .App {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   text-align: center;
 }
 
-body {
-  margin: 0;
-  overflow: hidden;
-}
-
 .grid-container {
   display: flex;
   flex-direction: column;
   height: 100vh;
+  background-color: #92ccdc; /* Change background color for dark mode */
+  color: #202020; /* Change text color for dark mode */
 }
 
 .left {
@@ -37,6 +39,28 @@ body {
     height: auto; /* Reset height */
   }
 
+  .linkedin-button, .github-button {
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 20px;
+    z-index: 1000;
+  }
+
+  /* Container for the buttons */
+  .button-container {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+
   .left {
     grid-column: 1;
     grid-row: 1; /* Align left box to the first row */
@@ -48,11 +72,32 @@ body {
     overflow-y: scroll;
     max-height: 100vh;
   }
+  
 }
 
 @media only screen and (max-width: 767px) {
   .grid-container {
     overflow-y: scroll; /* Enable scrolling on mobile */
+  }
+  .linkedin-button, .github-button {
+    color: white;
+    padding: 10px;
+    margin:10px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 20px;
+    z-index: 1000;
+  }
+
+  /* Adjust the position of the button container */
+  .button-container {
+    margin-top: 20px; 
+    display: flex;
+    justify-content: center; 
+    align-items: center;
   }
 }
 
@@ -92,6 +137,32 @@ body {
 }
 
 .dark-mode {
-  background-color: #333; /* Change background color for dark mode */
+  background-color: #3b4963; /* Change background color for dark mode */
   color: #fff; /* Change text color for dark mode */
 }
+
+/* General styles for the buttons */
+
+
+.linkedin-button {
+  background-color: #0077b5; /* LinkedIn color */
+}
+
+.github-button {
+  background-color: #333; /* GitHub color */
+}
+
+.linkedin-button i, .github-button i {
+  font-size: 20px;
+}
+
+
+
+/* @media only screen and (max-width: 767px) {
+  .button-container {
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    gap: 10px;
+  }
+} */
