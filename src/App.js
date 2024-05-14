@@ -53,7 +53,7 @@ export default function App() {
           </h3>
         </div>
         <div className="right">
-          <h2>Experience</h2>
+        <h2>Experience - <a href="https://drive.google.com/file/d/12tXrb8a6JFbpSzl_TV_-dALdG5EdQCXn/view?usp=sharing">Resume</a></h2>
           <br />
           <div className="summary">
           <h3>Learning Experience Design Fellow</h3>
@@ -64,14 +64,13 @@ export default function App() {
          
           <h3>Course Operations Fellow</h3>
           <h4>May 2024 - Current</h4>
-          
+          <p>I currently assist in the production and maintenance of UMICH online courses. With a focus in upcoming AI and ML mini courses, I help to ensure courses are up to standars, are free of errors, and continue to keep information updated. I also assist in the process of new iterations, which involve a cross-functional team - including faculty and professors, to iterate and update course matieral of previously released courses.</p>
           <h2>Projects</h2>
           <div class="glass-card">
             <img src="your-image-url.jpg" alt=""></img>
-            <h3>Project Title</h3>
+            <h3><a href="https://github.com/i-taylor/EECS-442-FINAL-PROJECT" target="_blank">ASL Finger Spelling ML Classifier</a></h3>
             <p>
-              Summary of the project goes here. It can be a brief description of
-              what the project is about.
+            Developed an ASL Finger Spelling Recognition program using machine learning techniques to facilitate real-time translation of American Sign Language (ASL) gestures into written text. Custom dataset creation, algorithm optimization, and emphasis on accessibility underscored our commitment to inclusive communication solutions. The Developed an ASL Finger Spelling Recognition program using machine learning techniques to facilitate real-time translation of American Sign Language (ASL) gestures into written text. Custom dataset creation, algorithm optimization, and emphasis on accessibility underscored our commitment to inclusive communication solutions.
             </p>
           </div>
           <br />
