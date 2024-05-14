@@ -53,7 +53,7 @@ export default function App() {
           </h3>
         </div>
         <div className="right">
-        <h2>Experience - <a href="https://drive.google.com/file/d/12tXrb8a6JFbpSzl_TV_-dALdG5EdQCXn/view?usp=sharing">Resume</a></h2>
+        <h2>Experience - <a href="https://drive.google.com/file/d/12tXrb8a6JFbpSzl_TV_-dALdG5EdQCXn/view?usp=sharing" target="_blank">Resume</a></h2>
           <br />
           <div className="summary">
           <h3>Learning Experience Design Fellow</h3>
