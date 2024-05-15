@@ -20,14 +20,17 @@ body {
 .left {
   padding: 10px;
   text-align: left;
-  font-family: "Courier New", Courier;
-  font-size: small;
+  font-family: "Inter", Courier;
+  font-size: medium;
+  
 }
 
 .right {
   padding: 10px;
   text-align: left;
-  font-family: "Courier New", Courier;
+  font-family: "Inter", Courier;
+  font-weight: 300;
+  
 }
 
 @media only screen and (min-width: 768px) {
@@ -154,6 +157,15 @@ body {
 
 .linkedin-button i, .github-button i {
   font-size: 20px;
+}
+
+.navigation{
+  margin-top: 35%;
+}
+
+.nav-items{
+  padding: 5px;
+  list-style-type: none;
 }
 
 
