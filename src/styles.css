@@ -82,6 +82,10 @@ body {
   .grid-container {
     overflow-y: scroll; /* Enable scrolling on mobile */
   }
+  .navigation{
+    display: none;
+  }
+
   .linkedin-button, .github-button {
     color: white;
     padding: 10px;
