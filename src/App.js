@@ -1,7 +1,9 @@
 import "./styles.css";
 import "@fortawesome/fontawesome-free/css/all.css";
+import { Link } from 'react-scroll';
 
-import React, { useRef, useState } from "react";
+
+import React, {  useState } from "react";
 
 export default function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -25,13 +27,29 @@ export default function App() {
           <h1>Isaac Taylor</h1>
           <h2>Software Developer, Innovator, and Life-long Learner</h2>
           <ul className="navigation">
-            <li className="nav-items"><a href= "#about">About</a>  </li>
+
+            <li>
+              <Link to="about" smooth={true} duration={500} containerId="scrollableDiv" className="nav-items">
+                About
+              </Link>
+            </li>
+            <li>
+              <Link to="experience" smooth={true} duration={500} containerId="scrollableDiv" className="nav-items">
+                Experience
+              </Link>
+            </li>
+            <li>
+              <Link to="projects" smooth={true} duration={500} containerId="scrollableDiv" className="nav-items">
+                Projects
+              </Link>
+            </li>
+            {/* <li className="nav-items"><a href= "#about">About</a>  </li>
             <li className="nav-items" > <a href= "#experience">Experience</a> </li>
-            <li className="nav-items"> <a href= "#projects">Projects</a> </li>
+            <li className="nav-items"> <a href= "#projects">Projects</a> </li> */}
 
           </ul>
         </div>
-        <div className="right">
+        <div className="right" id="scrollableDiv">
         <h2 id="about">About</h2>  
         <div className="summary">
         <p>I'm Isaac Taylor, a motivated individual with a strong academic
@@ -42,7 +60,7 @@ export default function App() {
 
         </div>
 
-        <h2 id="experience">Experience - <a href="https://drive.google.com/file/d/12tXrb8a6JFbpSzl_TV_-dALdG5EdQCXn/view?usp=sharing" target="_blank">Resume</a></h2>
+        <h2 id="experience">Experience - <a href="https://drive.google.com/file/d/12tXrb8a6JFbpSzl_TV_-dALdG5EdQCXn/view?usp=sharing" target="_blank" rel="noreferrer">Resume</a></h2>
           <div className="experience" >
           <h3>Learning Experience Design Fellow</h3>
           <h4>May 2023 - May 2024</h4>
@@ -56,7 +74,7 @@ export default function App() {
           <h2 id="projects">Projects</h2>
           <div class="glass-card" >
             <img src="your-image-url.jpg" alt=""></img>
-            <h3><a href="https://github.com/i-taylor/EECS-442-FINAL-PROJECT" target="_blank">ASL Finger Spelling ML Classifier</a></h3>
+            <h3><a href="https://github.com/i-taylor/EECS-442-FINAL-PROJECT" target="_blank" rel="noreferrer">ASL Finger Spelling ML Classifier</a></h3>
             <p>
             Developed an ASL Finger Spelling Recognition program using machine learning techniques to facilitate real-time translation of American Sign Language (ASL) gestures into written text. Custom dataset creation, algorithm optimization, and emphasis on accessibility underscored our commitment to inclusive communication solutions. The Developed an ASL Finger Spelling Recognition program using machine learning techniques to facilitate real-time translation of American Sign Language (ASL) gestures into written text. Custom dataset creation, algorithm optimization, and emphasis on accessibility underscored our commitment to inclusive communication solutions.
             </p>
@@ -65,7 +83,7 @@ export default function App() {
           <br />
           <div class="glass-card">
             <img src="your-image-url.jpg" alt=""></img>
-            <h3><a href="https://github.com/i-taylor/BIOLOGY102_FINAL" target="_blank">AI Tomato Disease Classifier</a></h3>
+            <h3><a href="https://github.com/i-taylor/BIOLOGY102_FINAL" target="_blank" rel="noreferrer">AI Tomato Disease Classifier</a></h3>
             <p>
             An artificial intelligence (AI) tool to identify and diagnose diseases affecting tomato plants. By utilizing machine learning algorithms trained on vast datasets of images depicting healthy and diseased tomato plants, the classifier can accurately distinguish between different types of diseases, including blight, leaf mold, early blight, and more.
 
@@ -118,6 +136,7 @@ export default function App() {
           className="github-button"
           target="_blank"
           rel="noopener noreferrer"
+          
         >
           <i className="fab fa-github"></i>
         </a>

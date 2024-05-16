@@ -7,14 +7,16 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   text-align: center;
+  scroll-behavior: smooth;
+  
 }
 
 .grid-container {
   display: flex;
   flex-direction: column;
   height: 100vh;
-  background-color: #92ccdc; /* Change background color for dark mode */
-  color: #202020; /* Change text color for dark mode */
+  background-color: #fbfdfe; /* Set background color for light mode */
+  color: #000; /* Set text color for light mode */
 }
 
 .left {
@@ -144,8 +146,8 @@ body {
 }
 
 .dark-mode {
-  background-color: #3b4963; /* Change background color for dark mode */
-  color: #fff; /* Change text color for dark mode */
+  background-color: #284b63; /* Change background color for dark mode */
+  color: #FFFFFF; /* Change text color for dark mode */
 }
 
 /* General styles for the buttons */
@@ -161,15 +163,24 @@ body {
 
 .linkedin-button i, .github-button i {
   font-size: 20px;
+  color: white;
 }
 
 .navigation{
   margin-top: 35%;
+  list-style-type: none;
+  
 }
 
 .nav-items{
-  padding: 5px;
+  padding: 10px;
   list-style-type: none;
+
+}
+
+.nav-items:hover {
+  font-weight: bold;
+  cursor: pointer;
 }
 
 
@@ -182,3 +193,14 @@ body {
     gap: 10px;
   }
 } */
+a:visited {
+  color: inherit;
+}
+a {
+  /* text-decoration: none; */
+  color: inherit;
+}
+
+li{
+  padding: 10px;
+}
