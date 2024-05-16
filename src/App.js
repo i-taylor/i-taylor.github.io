@@ -94,10 +94,11 @@ export default function App() {
           <br />
           <div class="glass-card">
             <img src="your-image-url.jpg" alt=""></img>
-            <h3>Project Title</h3>
+            <h3>This website!</h3>
             <p>
-              Summary of the project goes here. It can be a brief description of
-              what the project is about.
+              This website has been my biggest project lately as I teach myself react, and touch up my css skills, and is still in progress, if you see this - welcome! 
+              <br />
+              Placeholder for sumary.
             </p>
           </div>
           <br />
@@ -106,8 +107,7 @@ export default function App() {
             <img src="your-image-url.jpg" alt=""></img>
             <h3>Project Title</h3>
             <p>
-              Summary of the project goes here. It can be a brief description of
-              what the project is about.
+              Placeholder
             </p>
           </div>
           <br />
@@ -116,8 +116,7 @@ export default function App() {
             <img src="your-image-url.jpg" alt=""></img>
             <h3>Project Title</h3>
             <p>
-              Summary of the project goes here. It can be a brief description of
-              what the project is about.
+              Placeholder
             </p>
           </div>
           <br />
