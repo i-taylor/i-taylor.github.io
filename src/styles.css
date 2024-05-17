@@ -148,6 +148,10 @@ body {
 .dark-mode {
   background-color: #284b63; /* Change background color for dark mode */
   color: #FFFFFF; /* Change text color for dark mode */
+  
+}
+.dark-mode .nav-items::after {
+  background: #FFFFFF; /* Change underline color to white in dark mode */
 }
 
 /* General styles for the buttons */

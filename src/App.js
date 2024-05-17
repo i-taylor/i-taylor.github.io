@@ -60,7 +60,7 @@ export default function App() {
 
         </div>
 
-        <h2 id="experience">Experience - 
+        <h2 id="experience">Experience -  
           <a 
             href="https://drive.google.com/file/d/12tXrb8a6JFbpSzl_TV_-dALdG5EdQCXn/view?usp=sharing" 
             target="_blank" 
@@ -68,6 +68,20 @@ export default function App() {
               Resume
           </a>
         </h2>
+         
+         <div className="experience"> 
+            <h3>Course Operations Fellow</h3>
+            <h4>May 2024 - Current</h4>
+            <p>I currently assist in the production and maintenance of 
+              UMICH online courses. With a focus in upcoming AI and ML 
+              mini courses, I help to ensure courses are up to standars, 
+              are free of errors, and continue to keep information updated. 
+              I also assist in the process of new iterations, which involve 
+              a cross-functional team - including faculty and professors, 
+              to iterate and update course matieral of previously released 
+              courses.
+            </p>
+          </div>
           <div className="experience" >
             <h3>Learning Experience Design Fellow</h3>
             <h4>May 2023 - May 2024</h4>
@@ -87,20 +101,6 @@ export default function App() {
               in the creation of mockups, wireframes, and HTML production. 
               Additionally, I was responsible for creating and managing Canvas 
               Courses for graduate classes at the University of Michigan.
-            </p>
-          </div>
-         
-         <div className="experience"> 
-            <h3>Course Operations Fellow</h3>
-            <h4>May 2024 - Current</h4>
-            <p>I currently assist in the production and maintenance of 
-              UMICH online courses. With a focus in upcoming AI and ML 
-              mini courses, I help to ensure courses are up to standars, 
-              are free of errors, and continue to keep information updated. 
-              I also assist in the process of new iterations, which involve 
-              a cross-functional team - including faculty and professors, 
-              to iterate and update course matieral of previously released 
-              courses.
             </p>
           </div>
           <h2 id="projects">Projects</h2>
