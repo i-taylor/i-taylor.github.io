@@ -175,7 +175,23 @@ body {
 .nav-items{
   padding: 10px;
   list-style-type: none;
+  position: relative;
+}
 
+.nav-items::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #000;
+  transition: width 0.3s;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.nav-items:hover::after {
+  width: 100%;
 }
 
 .nav-items:hover {
