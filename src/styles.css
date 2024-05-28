@@ -110,28 +110,7 @@ body {
   }
 }
 
-.glass-card {
-  background-color: rgba(255, 255, 255, 0.2);
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
-  padding: 20px;
-  margin: auto; /* Center the card horizontally */
-  max-width: calc(80%); /* Adjust the max-width to fit within the grid box */
-}
 
-.glass-card img {
-  max-width: 100%;
-  border-radius: 10px;
-  margin-bottom: 10px;
-}
-
-.glass-card h3 {
-  margin-top: 0;
-}
-
-.glass-card p {
-  margin-bottom: 0;
-}
 
 .mode-toggle {
   position: absolute;
@@ -223,4 +202,64 @@ a {
 
 li{
   padding: 10px;
+}
+
+/* Glass Card */
+
+/* .glass-card {
+  display: flex;
+  align-items: flex-start;
+  margin: 20px 0;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+} */
+
+.glass-card img {
+  width: 100px; /* Adjust the size as needed */
+  height: 100px; /* Ensure the image remains square */
+  object-fit: cover;
+  margin-right: 20px;
+  border-radius: 10px;
+}
+
+.glass-card-content {
+  display: flex;
+  flex-direction: column;
+}
+
+/* .glass-card h3 {
+  margin: 0 0 10px 0;
+}
+
+.glass-card p {
+  margin: 0;
+} */
+
+
+
+.glass-card {
+  display: flex;
+  align-items: flex-start;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+  margin: auto; /* Center the card horizontally */
+  max-width: calc(80%); /* Adjust the max-width to fit within the grid box */
+}
+
+/* .glass-card img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+} */
+
+.glass-card h3 {
+  margin-top: 0;
+}
+
+.glass-card p {
+  margin-bottom: 0;
 }

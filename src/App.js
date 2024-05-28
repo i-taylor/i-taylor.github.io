@@ -105,8 +105,8 @@ export default function App() {
           </div>
           <h2 id="projects">Projects</h2>
           <div class="glass-card" >
-            <img src="your-image-url.jpg" alt=""></img>
-            <h3>
+            <img src="downloadagain.png" alt=""></img>
+            <div><h3>
               <a 
                 href="https://github.com/i-taylor/EECS-442-FINAL-PROJECT" 
                 target="_blank" 
@@ -126,12 +126,13 @@ export default function App() {
             algorithm optimization, and emphasis on accessibility underscored our 
             commitment to inclusive communication solutions.
             </p>
+            </div>
           </div>
           <br />
           <br />
           <div class="glass-card">
-            <img src="your-image-url.jpg" alt=""></img>
-            <h3>
+            <img src="Tomato.png" alt=""></img>
+            <div><h3>
               <a 
               href="https://github.com/i-taylor/BIOLOGY102_FINAL" 
               target="_blank" 
@@ -145,38 +146,44 @@ export default function App() {
             on vast datasets of images depicting healthy and diseased tomato plants, 
             the classifier can accurately distinguish between different types of diseases, 
             including blight, leaf mold, early blight, and more.
-            </p>
+            </p></div>
+            
           </div>
           <br />
           <br />
           <div class="glass-card">
-            <img src="your-image-url.jpg" alt=""></img>
-            <h3>This website!</h3>
+            <img src="logoforcard.png" alt=""></img>
+            <div><h3>This website!</h3>
             <p>
               This website has been my biggest project lately as I teach myself 
               react, and touch up my css skills, and is still in progress, 
               if you see this - welcome! 
               <br />
               Placeholder for sumary.
-            </p>
+            </p></div>
+            
           </div>
           <br />
           <br />
           <div class="glass-card">
             <img src="your-image-url.jpg" alt=""></img>
+            <div>
             <h3>Project Title</h3>
             <p>
               Placeholder
             </p>
+            </div>
           </div>
           <br />
           <br />
           <div class="glass-card">
             <img src="your-image-url.jpg" alt=""></img>
+            <div>
             <h3>Project Title</h3>
             <p>
               Placeholder
             </p>
+            </div>
           </div>
           <br />
           <br />
