@@ -1,5 +1,6 @@
 import "./styles.css";
 import "@fortawesome/fontawesome-free/css/all.css";
+import { TypeAnimation } from 'react-type-animation';
 import { Link } from 'react-scroll';
 
 
@@ -25,7 +26,23 @@ export default function App() {
       <div className={`grid-container ${darkMode ? "dark-mode" : ""}`}>
         <div className="left">
           <h1>Isaac Taylor</h1>
-          <h2>Software Developer, Innovator, and Life-long Learner</h2>
+          <TypeAnimation className="typePersonality"
+          sequence={[
+            // Same substring at the start will only be typed out once, initially
+            'Software developer',
+            3000, 
+            'Student',
+            3000,
+            'Innovator',
+            3000,
+            'Designer',
+            3000
+          ]}
+      wrapper="span"
+      speed={50}
+      style={{ fontSize: '2em' }}
+      repeat={Infinity}
+    />
           <ul className="navigation">
 
             <li>
@@ -122,9 +139,7 @@ export default function App() {
             underscored our commitment to inclusive communication solutions. The 
             Developed an ASL Finger Spelling Recognition program using machine 
             learning techniques to facilitate real-time translation of American 
-            Sign Language (ASL) gestures into written text. Custom dataset creation, 
-            algorithm optimization, and emphasis on accessibility underscored our 
-            commitment to inclusive communication solutions.
+            Sign Language (ASL) gestures into written text.
             </p>
             </div>
           </div>
@@ -158,8 +173,6 @@ export default function App() {
               This website has been my biggest project lately as I teach myself 
               react, and touch up my css skills, and is still in progress, 
               if you see this - welcome! 
-              <br />
-              Placeholder for sumary.
             </p></div>
             
           </div>
