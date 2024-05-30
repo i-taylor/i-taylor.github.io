@@ -69,7 +69,7 @@ export default function App() {
         <div className="right" id="scrollableDiv">
         <h2 id="about">About</h2>  
         <div className="summary">
-        <p>I'm Isaac 👋, I'm a really motivated student with a strong academic
+        <p>I'm Isaac 👋, I'm an exceptionally motivated student with a strong academic
             background and a keen interest in the intersection of computer science and cognitive
             science, advancing accessibility, computer vision and AI, and making cool things. I'm currently pursuing a Bachelors of Science with a double
             major in both Computer Science and Cognitive Science at the University of
