@@ -121,39 +121,52 @@ export default function App() {
             </p>
           </div>
           <h2 id="projects">Projects</h2>
-          <div class="glass-card" >
-            <img src="downloadagain.png" alt=""></img>
-            <div><h3>
-              <a 
-                href="https://github.com/i-taylor/EECS-442-FINAL-PROJECT" 
-                target="_blank" 
-                rel="noreferrer">
-                  ASL Finger Spelling ML Classifier
-              </a>
-            </h3>
-            <p>
-            Developed an ASL Finger Spelling Recognition program using 
-            machine learning techniques to facilitate real-time translation 
-            of American Sign Language (ASL) gestures into written text. Custom 
-            dataset creation, algorithm optimization, and emphasis on accessibility 
-            underscored our commitment to inclusive communication solutions. The 
-            Developed an ASL Finger Spelling Recognition program using machine 
-            learning techniques to facilitate real-time translation of American 
-            Sign Language (ASL) gestures into written text.
-            </p>
-            </div>
-          </div>
+          <div className="glass-card">
+  <img src="downloadagain.png" alt="" />
+  <div className="card-content">
+    <h3>
+      {/* <a 
+        href="https://github.com/i-taylor/EECS-442-FINAL-PROJECT" 
+        target="_blank" 
+        rel="noreferrer">
+        ASL Finger Spelling ML Classifier
+      </a> */}
+      ASL Finger Spelling ML Classifier
+    </h3>
+    <p>
+      Developed an ASL Finger Spelling Recognition program using 
+      machine learning techniques to facilitate real-time translation 
+      of American Sign Language (ASL) gestures into written text. Custom 
+      dataset creation, algorithm optimization, and emphasis on accessibility 
+      underscored our commitment to inclusive communication solutions. The 
+      Developed an ASL Finger Spelling Recognition program using machine 
+      learning techniques to facilitate real-time translation of American 
+      Sign Language (ASL) gestures into written text.
+    </p>
+  </div>
+  <a 
+    href="https://github.com/i-taylor/EECS-442-FINAL-PROJECT" 
+    target="_blank" 
+    rel="noreferrer" 
+    className="github-icon"
+  >
+    <i className="fab fa-github"></i>
+  </a>
+</div>
+
           <br />
           <br />
           <div class="glass-card">
             <img src="Tomato.png" alt=""></img>
             <div><h3>
-              <a 
+              {/* <a 
               href="https://github.com/i-taylor/BIOLOGY102_FINAL" 
               target="_blank" 
               rel="noreferrer">
                 AI Tomato Disease Classifier
-              </a>
+              </a> */}
+              AI Tomato Disease Classifier
+
             </h3>
             <p>
             An artificial intelligence (AI) tool to identify and diagnose diseases 
@@ -162,6 +175,14 @@ export default function App() {
             the classifier can accurately distinguish between different types of diseases, 
             including blight, leaf mold, early blight, and more.
             </p></div>
+            <a 
+              href="https://github.com/i-taylor/BIOLOGY102_FINAL" 
+              target="_blank" 
+              rel="noreferrer" 
+              className="github-icon"
+            >
+              <i className="fab fa-github"></i>
+            </a>
             
           </div>
           <br />
@@ -174,6 +195,14 @@ export default function App() {
               react, and touch up my css skills, and is still in progress, 
               if you see this - welcome! 
             </p></div>
+            <a 
+              href="https://github.com/i-taylor/i-taylor.github.io" 
+              target="_blank" 
+              rel="noreferrer" 
+              className="github-icon"
+            >
+              <i className="fab fa-github"></i>
+            </a>
             
           </div>
           <br />

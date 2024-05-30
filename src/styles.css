@@ -267,3 +267,15 @@ li{
 .typePersonality {
   margin-left: 3%;
 }
+
+.glass-card .github-icon {
+  /* position: absolute; */
+  /* top: 10px; Adjust positioning as needed */
+  right: 10px; /* Adjust positioning as needed */
+  color: black; /* Adjust color as needed */
+  font-size: 24px; /* Adjust size as needed */
+}
+
+.glass-card .github-icon:hover {
+  color: #4078c0; /* Change color on hover */
+}
