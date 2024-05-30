@@ -25,7 +25,7 @@ export default function App() {
       </div>
       <div className={`grid-container ${darkMode ? "dark-mode" : ""}`}>
         <div className="left">
-          <h1>Isaac Taylor</h1>
+          <h1 style={{ marginLeft: "3%" }}>Isaac Taylor</h1>
           <TypeAnimation className="typePersonality"
           sequence={[
             // Same substring at the start will only be typed out once, initially
