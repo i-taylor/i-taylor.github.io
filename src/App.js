@@ -91,11 +91,11 @@ export default function App() {
             <h4>May 2024 - Current</h4>
             <p>I currently assist in the production and maintenance of 
               UMICH online courses. With a focus in upcoming AI and ML 
-              mini courses, I help to ensure courses are up to standars, 
+              mini-courses, I help to ensure courses are up to standards, 
               are free of errors, and continue to keep information updated. 
               I also assist in the process of new iterations, which involve 
               a cross-functional team - including faculty and professors, 
-              to iterate and update course matieral of previously released 
+              to iterate and update course material of previously released 
               courses.
             </p>
           </div>
