@@ -5,8 +5,12 @@ import { Link } from 'react-scroll';
 
 
 import React, {  useState } from "react";
+import ReactGA from 'react-ga4';
+
+
 
 export default function App() {
+  ReactGA.initialize('G-ZCB5HME2E8');
   const [darkMode, setDarkMode] = useState(false);
   const toggleMode = () => {
     setDarkMode(!darkMode);
