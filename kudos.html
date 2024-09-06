@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kudos Board</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+
+        .card {
+            background-color: white;
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .card h3 {
+            margin: 0 0 10px 0;
+        }
+
+        .card p {
+            margin: 5px 0;
+        }
+
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .card-container .card {
+            margin: 10px;
+            width: 300px; /* Adjust the card width as needed */
+        }
+    </style>
+</head>
+<body>
+    <h1>Kudos Board</h1>
+    <div id="cards"></div>
+
+    <script>
+        const sheetURL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSypDIL52BsKOVfeJ6yMT_Q5yJ-xAHcXAb7oLmehsZGL21CQxpwxU4xiyl8I7fn2zsMbbL4YfXRWmh0/pub?gid=1690006564&single=true&output=csv';
+
+        fetch(sheetURL)
+            .then(response => response.text())
+            .then(csvText => {
+                const rows = csvText.split('\n').slice(1); // Remove the header row
+                const data = rows.map(row => row.split(/,(?=(?:(?:[^"]*"){2})*[^"]*$)/)).filter(row => row.length > 1);
+
+                // Sort by timestamp (assumed to be the first column)
+                data.sort((a, b) => new Date(b[0]) - new Date(a[0]));
+
+                const cardContainer = document.getElementById('cards');
+
+                data.forEach(columns => {
+                    const card = document.createElement('div');
+                    card.className = 'card';
+                    card.style.backgroundColor = getRandomColorFromPalette(); // Set a random color from the palette
+                    card.innerHTML = `
+                        <h3>${columns[1]}</h3>
+                        <p><strong>Kudos:</strong> ${columns[2]}</p>
+                        <p><strong>What went well:</strong> ${columns[3]}</p>
+                        <p><strong>What to improve:</strong> ${columns[4]}</p>
+                        <p><strong>Additional Question:</strong> ${columns[5]}</p>
+                    `;
+                    cardContainer.appendChild(card);
+                });
+            })
+            .catch(error => console.error('Error fetching data:', error));
+
+        function getRandomColorFromPalette() {
+            const palette = ['c9e4ca', '87bba2', '55828b', '3b6064', '364958'];
+            return '#' + palette[Math.floor(Math.random() * palette.length)];
+        }
+    </script>
+</body>
+</html>
