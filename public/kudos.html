@@ -12,7 +12,6 @@
         }
 
         .card {
-            background-color: #<?php echo getRandomColorFromPalette(); ?>; /* Generate random color */
             border: 1px solid #ddd;
             padding: 15px;
             margin-bottom: 10px;
@@ -29,10 +28,6 @@
             margin: 0 0 10px 0;
         }
 
-        .card p {
-            margin: 5px 0;
-        }
-
         .card-container {
             display: flex;
             flex-wrap: wrap;
@@ -47,7 +42,7 @@
 </head>
 <body>
     <h1>Kudos Board</h1>
-    <div id="cards"></div>
+    <div id="cards" class="card-container"></div>
 
     <script>
         const sheetURL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSypDIL52BsKOVfeJ6yMT_Q5yJ-xAHcXAb7oLmehsZGL21CQxpwxU4xiyl8I7fn2zsMbbL4YfXRWmh0/pub?gid=1690006564&single=true&output=csv';
@@ -66,20 +61,27 @@
                 data.forEach(columns => {
                     const card = document.createElement('div');
                     card.className = 'card';
+                    const randomColor = getRandomColorFromPalette(); 
+                    card.style.backgroundColor = `#${randomColor}`;
 
-                    // Check for a dark background color
-                    const backgroundColor = card.style.backgroundColor.slice(1); // Remove # symbol
-                    if (isColorDark(backgroundColor)) {
+                    // Check if the color is dark and apply a class accordingly
+                    if (isColorDark(randomColor)) {
                         card.classList.add('dark-background');
                     }
 
+                    // Extract and format the date
+                    const submissionDate = new Date(columns[0]);
+                    const formattedDate = submissionDate.toLocaleDateString();
+
+                    // Set card content with the date and other content
                     card.innerHTML = `
-                        <h3>${columns[1]}</h3>
-                        <p><strong>Kudos:</strong> ${columns[2]}</p>
-                        <p><strong>What went well:</strong> ${columns[3]}</p>
-                        <p><strong>What to improve:</strong> ${columns[4]}</p>
-                        <p><strong>Additional Question:</strong> ${columns[5]}</p>
+                        <h3>Submitted on: ${formattedDate}</h3>
+                        <p><strong>Kudos:</strong> ${columns[1]}</p>
+                        <p><strong>What went well:</strong> ${columns[2]}</p>
+                        <p><strong>What to improve:</strong> ${columns[3]}</p>
+                        <p><strong>Additional Question:</strong> ${columns[4]}</p>
                     `;
+
                     cardContainer.appendChild(card);
                 });
             })
@@ -94,4 +96,9 @@
         function isColorDark(colorHex) {
             const threshold = 128; // Adjust threshold as needed
             const rgb = colorHex.match(/.{1,2}/g).map(x => parseInt(x, 16));
-            const avg = rgb.reduce((a, b) => a + b,
+            const avg = rgb.reduce((a, b) => a + b, 0) / rgb.length;
+            return avg < threshold;
+        }
+    </script>
+</body>
+</html>
